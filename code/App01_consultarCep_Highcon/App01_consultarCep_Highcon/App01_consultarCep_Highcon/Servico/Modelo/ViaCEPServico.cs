@@ -21,6 +21,10 @@ namespace App01_consultarCep_Highcon.Servico.Modelo
 
             Endereco end = JsonConvert.DeserializeObject<Endereco>(conteudo);
 
+            //se for null o resultado
+            if (end.cep == null) return null;                
+
+
             return end;
 
 

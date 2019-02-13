@@ -5,13 +5,13 @@
              x:Class="App01_consultarCep_Highcon.MainPage">
 
     <StackLayout BackgroundColor="#FFBF00" Padding="30" Spacing="30">
-        <Image Source="logo.png" />
-        <Entry Placeholder="Digite o cep" PlaceholderColor="#FFBF00" BackgroundColor="#FFFFFF"/>
-        <Button Text="BUSCAR CEP" TextColor="#FFFFFF" BackgroundColor="#00416B"/>
+        <Image Source="logo.png" x:Name="LOGO"/>
+        <Entry Placeholder="Digite o cep" PlaceholderColor="#FFBF00" BackgroundColor="#FFFFFF" x:Name="CEP"/>
+        <Button Text="BUSCAR CEP" TextColor="#FFFFFF" BackgroundColor="#00416B" x:Name="BOTAO"/>
         
 
         <!-- Place new controls here -->
-        <Label Text="" 
+        <Label Text=""  x:Name="RESULTADO"
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
     </StackLayout>
